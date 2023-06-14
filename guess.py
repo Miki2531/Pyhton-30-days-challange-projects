@@ -45,7 +45,8 @@ print(lesser_of_two_evens(2, 4))
 print(lesser_of_two_evens(2, 5))
 
 
-# take two word_strings and return true when both string the word begind=s withe the same letter.
+# take two word_strings and return true when both string
+# the word beginds withe the same letter.
 
 def word_string(text):
     wordlist = text.lower().split()
