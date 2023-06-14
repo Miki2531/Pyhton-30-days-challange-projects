@@ -73,3 +73,13 @@ def makes_twenty(n1, n2):
 print(makes_twenty(12, 8))
 print(makes_twenty(20, 8))
 print(makes_twenty(2, 8))
+
+
+def old_macdonald(name):
+    first_half = name[:3]
+    second_half = name[3:]
+
+    return first_half.capitalize() + second_half.capitalize()
+
+
+print(old_macdonald('macdonald'))
