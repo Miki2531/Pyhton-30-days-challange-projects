@@ -41,6 +41,8 @@ input_string = 'Hello Mr: Mikiyas, how are you this fine Friday'
 
 print(up_low(input_string))
 
+# Method 1
+
 
 def multiply(number):
     result = reduce(lambda x, y: x*y, number)
@@ -49,6 +51,15 @@ def multiply(number):
 
 print(multiply([1, 2, 3, -4]))
 
+
+def sum(number):
+    total = 1
+    for num in number:
+        total = total * num
+    return total
+
+
+print(sum([1, 4, 5, 7, -8]))
 # return a uinque list from a list
 
 
@@ -61,3 +72,30 @@ def unique_list(lst):
 
 
 print(unique_list([1, 1, 2, 2, 2, 3, 4, 5, 4, 6, 7, 8, 1, 2, 3, 5]))
+
+
+# check the input from the user
+# is digit or not and specify the input range
+
+def user_input():
+    choice = 'WRONG'
+    acceptable_range = range(1, 10)
+    within_range = False
+
+    while choice.isdigit() == False or within_range == False:
+        choice = input("Please input the number between (1-10): ")
+
+        if choice.isdigit() == False:
+            print("Sorry input number is not a digit!")
+
+        if choice.isdigit() == True:
+            if int(choice) in acceptable_range:
+                within_range = True
+            else:
+                print('Sorry! The input number is out of range.')
+                within_range = False
+
+    return int(choice)
+
+
+print(user_input())
