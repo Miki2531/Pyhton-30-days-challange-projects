@@ -74,6 +74,9 @@ print(makes_twenty(12, 8))
 print(makes_twenty(20, 8))
 print(makes_twenty(2, 8))
 
+# change the first and third letter in to capitalize
+# methid one
+
 
 def old_macdonald(name):
     first_half = name[:3]
@@ -83,3 +86,74 @@ def old_macdonald(name):
 
 
 print(old_macdonald('macdonald'))
+
+# method two
+
+
+def old_macdonald(name):
+    new_macdonald = name[0].upper() + name[1:3] + name[3].upper() + name[4:]
+    return new_macdonald
+
+
+print(old_macdonald('macdonald'))
+
+
+# reverse sentence
+def master_yoga(text):
+    wordlist = text.split(' ')
+    # reverse_text = ''.join(reversed(wordlist))
+    # reverse_text = wordlist[::-1]
+    new = ' '.join(wordlist[::-1])
+    return new
+
+
+print(master_yoga('I am home'))
+print(master_yoga('I am a software enginner'))
+
+
+def has_33(list):
+    for i in range(0, len(list)-1):
+        if list[i] == 3 and list[i+1] == 3:
+            return True
+    return False
+
+
+print(has_33([1, 3, 3]))
+print(has_33([1, 2, 3]))
+
+
+print(has_33([1, 3, 3]))
+
+
+def spy_game(list):
+    code = [0, 0, 7, 'x']
+    for i in list:
+        if i == code[0]:
+            code.pop(0)
+    return len(code) == 1
+
+
+print(spy_game([1, 2, 4, 0, 0, 7, 5]))
+
+
+def check_prime(num):
+    if num < 2:
+        return 0
+
+    primes = [2]
+    x = 3
+
+    while x <= num:
+        for y in range(3, x, 2):
+            if x % y == 0:
+                x += 2
+                break
+        else:
+            primes.append(x)
+            x += 2
+
+    print(primes)
+    return len(primes)
+
+
+check_prime(100)
