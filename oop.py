@@ -45,8 +45,3 @@ class Account:
 
 
 a = Account('Miki', 1000)
-print(a.owner)
-print(a.balance)
-print(a.deposite(2000))
-print(a.withdraw(4000))
-print(a)
