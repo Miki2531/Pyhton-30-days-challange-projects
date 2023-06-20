@@ -50,6 +50,8 @@ def choice_first():
     else:
         return 'Player 2'
 
+# Indicating wheter space on the board freely available on.
+
 
 def space_check(board, position):
     return board[position] == ' '
