@@ -108,12 +108,12 @@ while game_on:
 
             if len(player_one.all_cards) < 5:
                 print("Player one unable to play war!!")
-                print("Player two Win! Player one losses")
+                print("Player two Win! Player one losses.")
                 game_on = False
                 break
             elif len(player_two.all_cards) < 5:
                 print("Player two unable to play war!!")
-                print("Player one Win! Player two losses")
+                print("Player one Win! Player two losses.")
                 game_on = False
                 break
             # otherwise , we are still at war, add another cards on the table
