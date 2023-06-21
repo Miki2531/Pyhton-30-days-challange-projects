@@ -54,8 +54,8 @@ class Player:
         return f'Player {self.name} has {self.all_cards} cards.'
 
 
-player_one = Player("One")
-player_two = Player("Two")
+player_one = Player("Player one: Mikiyas")
+player_two = Player("Player two: Beba")
 new_deck = Deck()
 new_deck.shuffle()
 # Split the Deck between players
